@@ -8,6 +8,7 @@ public class EventSubscriber : MonoBehaviour
     public SwipeController SwipeCon;
     public GameObject cube;
     public GameObject map;
+    public TerrainCreator TerrainCreator;
     public float TimeAnim = 0.5f;
     public float distancia = 2f;
     bool OnAnim = false;
@@ -44,6 +45,11 @@ public class EventSubscriber : MonoBehaviour
             }
             else
             {
+                if (direction.z > 0)
+                {
+                    TerrainCreator.CrearTerreno();
+                }
+                
                 LeanTween.moveLocal(cube, cube.transform.position + Vector3.up, TimeAnim / 2).setOnComplete(() =>
                 {
                     LeanTween.moveLocal(cube, cube.transform.position  - Vector3.up, TimeAnim / 2).setOnComplete(() =>
