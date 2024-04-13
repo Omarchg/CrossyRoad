@@ -8,7 +8,7 @@ public class TerrainCreator : MonoBehaviour
     public List<GameObject> Terreno2;
     public List<GameObject> Terreno3;
     float terrenoMedio = 0f;
-    TriggerEnter triggerEnter;
+    
     public GameObject piso;
     bool haybloque = false;
 
