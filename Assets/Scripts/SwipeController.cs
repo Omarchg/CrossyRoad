@@ -8,14 +8,13 @@ public class SwipeController : MonoBehaviour
     Vector3 ClickAlSoltar;
     [SerializeField] GameObject cube;
     public float offset = 25f;
-    public float distanciaRayo;
+    [SerializeField]
+    float distanciaRayo;
     
     public static SwipeController Instance;
 
     public delegate void Swipe(Vector3 direction);
     public event Swipe OnSwipe;
-    public LayerMask capaobstaculos;
-
 
     private void Awake()
     {
@@ -113,13 +112,10 @@ public class SwipeController : MonoBehaviour
     {
         RaycastHit hit;
         Ray rayo = new Ray(cube.transform.position + Vector3.up * 0.5f, cube.transform.forward);
-        if (Physics.Raycast(rayo, out hit, distanciaRayo, capaobstaculos))
+        if (Physics.Raycast(rayo, out hit, distanciaRayo))
         {
             return true;
         }
         return false;
     }
-
-
-
 }
