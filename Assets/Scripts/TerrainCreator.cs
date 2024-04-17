@@ -59,7 +59,7 @@ public class TerrainCreator : MonoBehaviour
             instancia.SetActive(false);
             instancia.transform.parent = piso.transform;
             lista.Add(instancia);
-            print("creado");
+            
         }
     }
 

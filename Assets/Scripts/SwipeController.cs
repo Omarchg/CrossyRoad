@@ -8,11 +8,13 @@ public class SwipeController : MonoBehaviour
     Vector3 ClickAlSoltar;
     [SerializeField] GameObject cube;
     public float offset = 25f;
+    public float distanciaRayo;
     
     public static SwipeController Instance;
 
     public delegate void Swipe(Vector3 direction);
     public event Swipe OnSwipe;
+    public LayerMask capaobstaculos;
 
 
     private void Awake()
@@ -42,6 +44,12 @@ public class SwipeController : MonoBehaviour
             {
                 diferencia.z = 1;
                 cube.transform.eulerAngles = new Vector3(0, 0, 0);
+
+                if (Rayo())
+                {
+                    return;
+                }
+
                 OnSwipe(diferencia);
             }
 
@@ -81,6 +89,10 @@ public class SwipeController : MonoBehaviour
                 }
 
                 diferencia.y = 0f;
+                if (Rayo())
+                {
+                    return;
+                }
 
                 if (OnSwipe != null)
                 {
@@ -90,4 +102,24 @@ public class SwipeController : MonoBehaviour
             }
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(cube.transform.position + Vector3.up * 0.5f, cube.transform.position + Vector3.up * 0.5f + cube.transform.forward * distanciaRayo);
+    }
+    public bool Rayo()
+    {
+        RaycastHit hit;
+        Ray rayo = new Ray(cube.transform.position + Vector3.up * 0.5f, cube.transform.forward);
+        if (Physics.Raycast(rayo, out hit, distanciaRayo, capaobstaculos))
+        {
+            return true;
+        }
+        return false;
+    }
+
+
+
 }
