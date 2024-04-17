@@ -47,7 +47,7 @@ public class EventSubscriber : MonoBehaviour
             {
                 if (direction.z > 0)
                 {
-                    TerrainCreator.CrearTerreno();
+                    TerrainCreator.TerrenoInfinito();
                 }
                 
                 LeanTween.moveLocal(cube, cube.transform.position + Vector3.up, TimeAnim / 2).setOnComplete(() =>
