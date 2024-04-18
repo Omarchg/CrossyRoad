@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Coches : MonoBehaviour
 {
     public float velocidad;
-    [SerializeField] float spawncoches = 65f;
+    
 
 
 
@@ -26,11 +26,11 @@ public class Coches : MonoBehaviour
     {
         if (other.CompareTag("LimiteCocheIzquierda"))
         {
-            transform.Translate(0, 0, -spawncoches);
+            transform.Translate(0, 0, -65);
         }
         if (other.CompareTag("LimiteCocheDerecha"))
         {
-            transform.Translate(0, 0, -spawncoches);
+            transform.Translate(0, 0, -65);
         }
 
     }
