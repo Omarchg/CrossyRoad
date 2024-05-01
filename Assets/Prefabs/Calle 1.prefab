@@ -1033,7 +1033,7 @@ GameObject:
   - component: {fileID: 7523499834877735343}
   m_Layer: 0
   m_Name: cube_car 1 (1)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 1850036015997538099}
   m_Layer: 0
   m_Name: cube_car 1
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

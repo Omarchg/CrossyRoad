@@ -9,6 +9,9 @@ TagManager:
   - Terreno3
   - LimiteCocheIzquierda
   - LimiteCocheDerecha
+  - LimiteJugador
+  - Coche
+  - Agua
   layers:
   - Default
   - TransparentFX

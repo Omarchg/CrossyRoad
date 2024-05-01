@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 7372836205400351634}
   m_Layer: 0
   m_Name: cube_car 1 (6)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3241,7 +3241,7 @@ GameObject:
   - component: {fileID: 8909616344225069055}
   m_Layer: 0
   m_Name: cube_car 1 (2)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3434,7 +3434,7 @@ GameObject:
   - component: {fileID: 6660696192719123235}
   m_Layer: 0
   m_Name: cube_car 1
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3899,7 +3899,7 @@ GameObject:
   - component: {fileID: 5493925751653459602}
   m_Layer: 0
   m_Name: cube_car 1 (4)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4175,7 +4175,7 @@ GameObject:
   - component: {fileID: 3337828387837763471}
   m_Layer: 0
   m_Name: cube_car 1 (7)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6277,7 +6277,7 @@ GameObject:
   - component: {fileID: 1076247614552558260}
   m_Layer: 0
   m_Name: cube_car 1 (5)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6553,7 +6553,7 @@ GameObject:
   - component: {fileID: 6099071474262341026}
   m_Layer: 0
   m_Name: cube_car 1 (3)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9757,7 +9757,7 @@ GameObject:
   - component: {fileID: 3290997923545828799}
   m_Layer: 0
   m_Name: cube_car 1 (1)
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11074,7 +11074,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

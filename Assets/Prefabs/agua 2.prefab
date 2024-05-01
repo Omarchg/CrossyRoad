@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2314679875331450678}
   - component: {fileID: 4034494389577506989}
   - component: {fileID: 5836114362311184361}
-  - component: {fileID: 3892951350560752453}
+  - component: {fileID: 6826181762935741651}
   m_Layer: 0
   m_Name: Terreno1 (2)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3892951350560752453
-MeshCollider:
+--- !u!65 &6826181762935741651
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,12 +100,11 @@ MeshCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 0.05, z: 9.999999}
+  m_Center: {x: 0, y: -0.03, z: 0}
 --- !u!1 &3761856574676234037
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,10 +116,10 @@ GameObject:
   - component: {fileID: 2379319323885080647}
   - component: {fileID: 3541764999331627862}
   - component: {fileID: 9136704576729991505}
-  - component: {fileID: 9153992870840033472}
+  - component: {fileID: 487888901919671473}
   m_Layer: 0
   m_Name: Terreno1 (1)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,8 +189,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &9153992870840033472
-MeshCollider:
+--- !u!65 &487888901919671473
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -206,12 +205,11 @@ MeshCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 0.05, z: 9.999999}
+  m_Center: {x: 0, y: -0.03, z: 0}
 --- !u!1 &9097663784648935078
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +263,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

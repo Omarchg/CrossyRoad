@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
+
 
 public class EventSubscriber : MonoBehaviour
 {
@@ -12,6 +14,11 @@ public class EventSubscriber : MonoBehaviour
     public float TimeAnim = 0.5f;
     public float distancia = 2f;
     bool OnAnim = false;
+    float pasos = 0f;
+    float pasosAtras = 0f;
+    float record;
+    [SerializeField]
+    TextMeshProUGUI Record;
     public void Start()
     {
         
@@ -22,6 +29,17 @@ public class EventSubscriber : MonoBehaviour
     public void OnDisabled()
     {
         SwipeController.Instance.OnSwipe -= MoveTarget;
+    }
+
+    private void Update()
+    {
+        float current = pasos - pasosAtras;
+        if (current > record)
+        {
+            record = current;
+            Record.text = record.ToString("00");
+        }
+
     }
 
     public void MoveTarget(Vector3 direction)
@@ -48,6 +66,12 @@ public class EventSubscriber : MonoBehaviour
                 if (direction.z > 0)
                 {
                     TerrainCreator.TerrenoInfinito();
+                    pasos++;
+                    
+                }
+                else
+                {
+                    pasosAtras++;
                 }
                 
                 LeanTween.moveLocal(cube, cube.transform.position + Vector3.up, TimeAnim / 2).setOnComplete(() =>
