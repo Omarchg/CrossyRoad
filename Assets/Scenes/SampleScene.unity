@@ -194,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 122596620}
   serializedVersion: 2
   m_LocalRotation: {x: 0.36497167, y: -0.27781588, z: 0.1150751, w: 0.8811196}
-  m_LocalPosition: {x: 6.04, y: 12.690001, z: -8.05}
+  m_LocalPosition: {x: 6.04, y: 14.817097, z: -9.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -566,7 +566,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.36497167, y: -0.27781588, z: 0.1150751, w: 0.8811196}
-  m_LocalPosition: {x: 6.04, y: 12.690001, z: -8.05}
+  m_LocalPosition: {x: 6.04, y: 14.817097, z: -9.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 6.04, y: 11.72, z: -8}
+  m_FollowOffset: {x: 6.04, y: 11.72, z: -9.13}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1365,8 +1365,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.205494, y: 3.17, z: 32.4}
-  m_Center: {x: 0.60274696, y: 0, z: 0}
+  m_Size: {x: 5.2357254, y: 3.17, z: 53.77}
+  m_Center: {x: -0.9123688, y: 0, z: 0}
 --- !u!4 &1856624524
 Transform:
   m_ObjectHideFlags: 0
@@ -1424,8 +1424,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.205494, y: 3.17, z: 32.4}
-  m_Center: {x: 0.60274696, y: 0, z: 0}
+  m_Size: {x: 4.9373245, y: 3.17, z: 53.77}
+  m_Center: {x: 1.9686623, y: 0, z: 0}
 --- !u!4 &1918584848
 Transform:
   m_ObjectHideFlags: 0
@@ -1435,7 +1435,7 @@ Transform:
   m_GameObject: {fileID: 1918584846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.602745, y: 1.37, z: 0}
+  m_LocalPosition: {x: 36.60275, y: 1.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1549,14 +1549,15 @@ MonoBehaviour:
   - {fileID: 778766115413110582, guid: 2e33251493616e94791c28e3f062ac82, type: 3}
   Terreno2: []
   Terreno3_prefab:
-  - {fileID: 189426354607548514, guid: 51c5f03c7e274cb4f8303ad0b6c1e63a, type: 3}
+  - {fileID: 9097663784648935078, guid: f1f660f26d2892440b82453458dc9856, type: 3}
   - {fileID: 8592294402120737724, guid: ab863eb060611e047b436871e669de54, type: 3}
-  - {fileID: 2569916432151757281, guid: bf06043b6df0e154bbec5ac6cec2664f, type: 3}
+  - {fileID: 8827397425746833977, guid: 4323c2e8d726f36489ba735aecb16d53, type: 3}
+  - {fileID: 9097663784648935078, guid: f1f660f26d2892440b82453458dc9856, type: 3}
+  - {fileID: 8827397425746833977, guid: 4323c2e8d726f36489ba735aecb16d53, type: 3}
   - {fileID: 8592294402120737724, guid: ab863eb060611e047b436871e669de54, type: 3}
-  - {fileID: 189426354607548514, guid: 51c5f03c7e274cb4f8303ad0b6c1e63a, type: 3}
-  - {fileID: 2569916432151757281, guid: bf06043b6df0e154bbec5ac6cec2664f, type: 3}
+  - {fileID: 8827397425746833977, guid: 4323c2e8d726f36489ba735aecb16d53, type: 3}
   - {fileID: 8592294402120737724, guid: ab863eb060611e047b436871e669de54, type: 3}
-  - {fileID: 2569916432151757281, guid: bf06043b6df0e154bbec5ac6cec2664f, type: 3}
+  - {fileID: 8592294402120737724, guid: ab863eb060611e047b436871e669de54, type: 3}
   Terreno3: []
   Activos: []
   piso: {fileID: 150847892}
@@ -1727,7 +1728,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e6aba8c727a640c449584c7f96591bf2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.97
+      value: 3.097097
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6aba8c727a640c449584c7f96591bf2,
         type: 3}
@@ -1778,6 +1779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6aba8c727a640c449584c7f96591bf2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
